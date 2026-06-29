@@ -26,86 +26,118 @@ nav a{color:#00ff88; margin:10px; text-decoration:none; font-weight:bold}
   <a href="#hockey">HOCKEY</a>
   <a href="#basket">BASKET</a>
 </nav>
-<!-- COMBINÉ DU JOUR STYLE CARTE -->
-<section class="combo-section">
-    <h2>🔥 COMBINÉ DU JOUR</h2>
-    <p class="cote-total">Cote totale: 4.76</p>
+<!-- SYSTÈME ONGLET SPORT -->
+<section class="sports-tabs">
 
-    <!-- CARTE MATCH 1 -->
-    <div class="match-card">
-        <div class="match-head">⚽ FOOT - COMBINÉ VIP</div>
-        <div class="match-body">
-            <h3>Brésil vs Japon</h3>
-            <p><b>Pronostic:</b> Oui - Les 2 équipes marquent</p>
-            <p><b>Cote:</b> 1.88</p>
-        </div>
+    <!-- LES BOUTONS EN HAUT -->
+    <div class="tab-buttons">
+        <button class="tab-btn active" onclick="openSport('foot')">⚽ FOOT</button>
+        <button class="tab-btn" onclick="openSport('hockey')">🏒 HOCKEY</button>
+        <button class="tab-btn" onclick="openSport('basket')">🏀 BASKET</button>
     </div>
 
-    <!-- CARTE MATCH 2 -->
-    <div class="match-card">
-        <div class="match-head">⚽ FOOT - COMBINÉ VIP</div>
-        <div class="match-body">
-            <h3>Allemagne vs Paraguay</h3>
-            <p><b>Pronostic:</b> Allemagne</p>
-            <p><b>Cote:</b> 1.36</p>
+    <!-- CONTENU FOOT -->
+    <div id="foot" class="tab-content active">
+        <h2>🔥 COMBINÉ FOOT DU JOUR</h2>
+        <p class="cote-total">Cote totale: 4.76</p>
+
+        <div class="match-card">
+            <div class="match-head">⚽ FOOT - COMBINÉ VIP</div>
+            <div class="match-body">
+                <h3>Brésil vs Japon</h3>
+                <p><b>Pronostic:</b> Oui - Les 2 équipes marquent</p>
+                <p><b>Cote:</b> 1.88</p>
+            </div>
         </div>
+        <!-- Colle ici tes 2 autres matchs foot -->
     </div>
 
-    <!-- CARTE MATCH 3 -->
-    <div class="match-card">
-        <div class="match-head">⚽ FOOT - COMBINÉ VIP</div>
-        <div class="match-body">
-            <h3>Pays-Bas vs Maroc</h3>
-            <p><b>Pronostic:</b> Oui - Les 2 équipes marquent</p>
-            <p><b>Cote:</b> 1.86</p>
+    <!-- CONTENU HOCKEY -->
+    <div id="hockey" class="tab-content">
+        <h2>🔥 COMBINÉ HOCKEY DU JOUR</h2>
+        <p class="cote-total">Cote totale: 3.52</p>
+
+        <div class="match-card">
+            <div class="match-head">🏒 HOCKEY - COMBINÉ VIP</div>
+            <div class="match-body">
+                <h3>Canada vs USA</h3>
+                <p><b>Pronostic:</b> Plus de 5.5 Buts</p>
+                <p><b>Cote:</b> 1.95</p>
+            </div>
         </div>
+        <!-- Ajoute tes matchs hockey ici -->
+    </div>
+
+    <!-- CONTENU BASKET -->
+    <div id="basket" class="tab-content">
+        <h2>🔥 COMBINÉ BASKET DU JOUR</h2>
+        <p class="cote-total">Cote totale: 4.10</p>
+
+        <div class="match-card">
+            <div class="match-head">🏀 BASKET - COMBINÉ VIP</div>
+            <div class="match-body">
+                <h3>Lakers vs Celtics</h3>
+                <p><b>Pronostic:</b> Victoire Lakers</p>
+                <p><b>Cote:</b> 1.80</p>
+            </div>
+        </div>
+        <!-- Ajoute tes matchs basket ici -->
     </div>
 
 </section>
 
 <style>
-.combo-section {
-    max-width: 420px;
-    margin: 30px auto;
-    padding: 0 15px;
-    color: white;
-    font-family: 'Arial', sans-serif;
-    text-align: center;
-}
-.combo-section h2 { font-size: 24px; margin-bottom: 5px; }
-.cote-total { color: #aaa; margin-bottom: 20px; font-size: 16px; }
-
-.match-card {
-    background: #0D1B2A; /* Bleu nuit comme ta photo */
-    border-radius: 12px;
-    border-left: 4px solid #00FF00; /* Bordure verte néon */
-    box-shadow: 0 0 15px rgba(0, 255, 0, 0.15); /* Glow vert */
-    margin-bottom: 15px;
-    text-align: left;
-    overflow: hidden;
-}
-.match-head {
-    background: rgba(0, 255, 0, 0.1);
-    color: #00FF00;
+.sports-tabs { max-width: 420px; margin: 30px auto; padding: 0 15px; color: white; text-align: center; }
+.tab-buttons { display: flex; gap: 10px; margin-bottom: 20px; }
+.tab-btn {
+    flex: 1;
+    padding: 12px;
+    background: #1A1A1A;
+    border: 2px solid #333;
+    color: #aaa;
     font-weight: bold;
-    font-size: 13px;
-    padding: 8px 15px;
-    border-bottom: 1px solid rgba(0, 255, 0, 0.2);
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
 }
-.match-body {
-    padding: 15px;
+.tab-btn.active {
+    background: #00FF00;
+    color: black;
+    border-color: #00FF00;
+    box-shadow: 0 0 10px rgba(0,255,0,0.3);
 }
-.match-body h3 {
-    margin: 0 0 10px 0;
-    font-size: 18px;
-}
-.match-body p {
-    margin: 5px 0;
-    font-size: 15px;
-    color: #E0E0E0;
-}
+.tab-content { display: none; } /* Tout caché par défaut */
+.tab-content.active { display: block; } /* Seul l'actif s'affiche */
+.cote-total { color: #aaa; margin-bottom: 20px; font-size: 16px; }
+/* Recolle ici le style.match-card.match-head.match-body de tout à l'heure */
+.match-card { background: #0D1B2A; border-radius: 12px; border-left: 4px solid #00FF00; box-shadow: 0 0 15px rgba(0, 255, 0, 0.15); margin-bottom: 15px; text-align: left; overflow: hidden; }
+.match-head { background: rgba(0, 255, 0, 0.1); color: #00FF00; font-weight: bold; font-size: 13px; padding: 8px 15px; border-bottom: 1px solid rgba(0, 255, 0, 0.2); }
+.match-body { padding: 15px; }
+.match-body h3 { margin: 0 0 10px 0; font-size: 18px; }
+.match-body p { margin: 5px 0; font-size: 15px; color: #E0E0E0; }
 .match-body b { color: white; }
 </style>
+
+<script>
+function openSport(sportName) {
+    // 1. Cache tout le contenu
+    let tabcontent = document.getElementsByClassName("tab-content");
+    for (let i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].classList.remove("active");
+    }
+
+    // 2. Enlève le vert sur tous les boutons
+    let tablinks = document.getElementsByClassName("tab-btn");
+    for (let i = 0; i < tablinks.length; i++) {
+        tablinks[i].classList.remove("active");
+    }
+
+    // 3. Affiche le contenu cliqué + met le bouton en vert
+    document.getElementById(sportName).classList.add("active");
+    event.currentTarget.classList.add("active");
+}
+</script>
+
 <!-- RÉSULTATS DU JOUR -->
 <h2 style="color: #00FF7F; margin-top: 40px; text-align: center;">RÉSULTATS DU JOUR</h2>
 
