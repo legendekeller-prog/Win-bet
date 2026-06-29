@@ -26,48 +26,86 @@ nav a{color:#00ff88; margin:10px; text-decoration:none; font-weight:bold}
   <a href="#hockey">HOCKEY</a>
   <a href="#basket">BASKET</a>
 </nav>
-<!-- SECTION COMBINÉ DU JOUR -->
-<section class="combiné-section">
+<!-- COMBINÉ DU JOUR STYLE CARTE -->
+<section class="combo-section">
     <h2>🔥 COMBINÉ DU JOUR</h2>
-    <p class="subtext">Cote totale: <span id="cote-total">4.76</span></p>
+    <p class="cote-total">Cote totale: 4.76</p>
 
-    <div class="ticket">
-        
-        <!-- MATCH 1 -->
-        <div class="match-card">
-            <div class="match-header">
-                <span>⚽ Brésil - Japon</span>
-                <span class="close">X</span>
-            </div>
-            <div class="match-body">
-                <div>
-                    <b>Oui</b>
-                    <p>Les 2 équipes marquent</p>
-                </div>
-                <div class="cote">1.88</div>
-            </div>
+    <!-- CARTE MATCH 1 -->
+    <div class="match-card">
+        <div class="match-head">⚽ FOOT - COMBINÉ VIP</div>
+        <div class="match-body">
+            <h3>Brésil vs Japon</h3>
+            <p><b>Pronostic:</b> Oui - Les 2 équipes marquent</p>
+            <p><b>Cote:</b> 1.88</p>
         </div>
+    </div>
 
-        <!-- MATCH 2 -->
-        <div class="match-card">
-            <div class="match-header">
-                <span>⚽ Allemagne - Paraguay</span>
-                <span class="close">X</span>
-            </div>
-            <div class="match-body">
-                <div>
-                    <b>Allemagne</b>
-                    <p>Résultat du match (tps rég.)</p>
-                </div>
-                <div class="cote">1.36</div>
-            </div>
+    <!-- CARTE MATCH 2 -->
+    <div class="match-card">
+        <div class="match-head">⚽ FOOT - COMBINÉ VIP</div>
+        <div class="match-body">
+            <h3>Allemagne vs Paraguay</h3>
+            <p><b>Pronostic:</b> Allemagne</p>
+            <p><b>Cote:</b> 1.36</p>
         </div>
+    </div>
 
-        <!-- MATCH 3 -->
-        <div class="match-card">
-            <div class="match-header">
-                <span>⚽ Pays-Bas - Maroc</span>
-                <span class="close">
+    <!-- CARTE MATCH 3 -->
+    <div class="match-card">
+        <div class="match-head">⚽ FOOT - COMBINÉ VIP</div>
+        <div class="match-body">
+            <h3>Pays-Bas vs Maroc</h3>
+            <p><b>Pronostic:</b> Oui - Les 2 équipes marquent</p>
+            <p><b>Cote:</b> 1.86</p>
+        </div>
+    </div>
+
+</section>
+
+<style>
+.combo-section {
+    max-width: 420px;
+    margin: 30px auto;
+    padding: 0 15px;
+    color: white;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+}
+.combo-section h2 { font-size: 24px; margin-bottom: 5px; }
+.cote-total { color: #aaa; margin-bottom: 20px; font-size: 16px; }
+
+.match-card {
+    background: #0D1B2A; /* Bleu nuit comme ta photo */
+    border-radius: 12px;
+    border-left: 4px solid #00FF00; /* Bordure verte néon */
+    box-shadow: 0 0 15px rgba(0, 255, 0, 0.15); /* Glow vert */
+    margin-bottom: 15px;
+    text-align: left;
+    overflow: hidden;
+}
+.match-head {
+    background: rgba(0, 255, 0, 0.1);
+    color: #00FF00;
+    font-weight: bold;
+    font-size: 13px;
+    padding: 8px 15px;
+    border-bottom: 1px solid rgba(0, 255, 0, 0.2);
+}
+.match-body {
+    padding: 15px;
+}
+.match-body h3 {
+    margin: 0 0 10px 0;
+    font-size: 18px;
+}
+.match-body p {
+    margin: 5px 0;
+    font-size: 15px;
+    color: #E0E0E0;
+}
+.match-body b { color: white; }
+</style>
 <!-- RÉSULTATS DU JOUR -->
 <h2 style="color: #00FF7F; margin-top: 40px; text-align: center;">RÉSULTATS DU JOUR</h2>
 
