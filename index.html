@@ -150,4 +150,40 @@ nav a{color:#00ff88; margin:10px; text-decoration:none; font-weight:bold}
 </footer>
 
 </body>
+ <!-- BANDEAU PUB DÉFILANT -->
+<div class="marquee">
+    <div class="marquee-content">
+        <span>🔥 72% DE RÉUSSITE CE MOIS | </span>
+        <span>💰 COMBINÉ VIP 4.76 DISPONIBLE | </span>
+        <span>⚡ REJOINS LE VIP À 30.000F SUR WHATSAPP | </span>
+        <span>🔥 72% DE RÉUSSITE CE MOIS | </span> <!-- On le duplique pour effet boucle infini -->
+        <span>💰 COMBINÉ VIP 4.76 DISPONIBLE | </span>
+        <span>⚡ REJOINS LE VIP À 30.000F SUR WHATSAPP | </span>
+    </div>
+</div>
+
+<style>
+.marquee {
+    width: 100%;
+    overflow: hidden;
+    background: #000;
+    border-bottom: 2px solid gold;
+    padding: 10px 0;
+}
+.marquee-content {
+    display: inline-block;
+    white-space: nowrap;
+    animation: marquee 20s linear infinite;
+}
+.marquee-content span {
+    color: gold;
+    font-weight: bold;
+    font-size: 14px;
+    padding-right: 40px;
+}
+@keyframes marquee {
+    0%   { transform: translateX(0); }
+    100% { transform: translateX(-50%); } /* -50% car on a dupliqué le texte */
+}
+</style>
 </html>
