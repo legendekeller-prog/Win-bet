@@ -3,264 +3,27 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Win Bet - Pronostic Foot, Hockey, Basket</title>
+<title>Win Bet VIP</title>
 <style>
-body{font-family:Arial; margin:0; background:#0a0f1c; color:#fff; text-align:center}
-header{background:#00ff88; color:#000; padding:20px; font-size:24px; font-weight:bold}
-nav a{color:#00ff88; margin:10px; text-decoration:none; font-weight:bold}
-.box{background:#1a2233; margin:15px; padding:15px; border-radius:10px; border-left:4px solid #00ff88}
-.vip{background:#ffaa00; color:#000; padding:20px; margin:15px; border-radius:10px; font-weight:bold}
-.btn{display:block; background:#25D366; color:#fff; padding:15px; margin:10px; border-radius:8px; text-decoration:none; font-size:18px}
+body{background:#000;color:white;font-family:Arial,sans-serif;margin:0;padding:0}.marquee{width:100%;overflow:hidden;background:#000;border-bottom:2px solid gold;padding:10px 0}.marquee-content{display:inline-block;white-space:nowrap;animation:marquee 20s linear infinite}.marquee-content span{color:gold;font-weight:bold;font-size:14px;padding-right:40px}@keyframes marquee{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}.sports-tabs{padding:20px}.tab-buttons{display:flex;gap:10px;margin-bottom:20px}.tab-btn{flex:1;padding:12px;background:#1A1A1A;color:gold;border:2px solid gold;border-radius:8px;font-weight:bold;cursor:pointer}.tab-btn.active{background:gold;color:black}.tab-content{display:none}.tab-content.active{display:block}.match-card{background:#1A1A1A;border:2px solid gold;border-radius:12px;padding:15px;margin-bottom:15px}.match-head{color:gold;font-weight:bold;margin-bottom:10px}.match-body h3{margin:0 0 8px 0}.cote-total{color:#00FF00;font-weight:bold;font-size:18px}footer{padding:20px;font-size:12px;color:#aaa;text-align:center}.maintenance-wrap{height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;background:#000;text-align:center;padding:20px}.maintenance-wrap h1{font-size:40px;color:#FFD700}.maintenance-wrap .icon{font-size:60px;margin-bottom:20px;animation:spin 2s linear infinite}@keyframes spin{100%{transform:rotate(360deg)}}
 </style>
 </head>
 <body>
- <img src="logo.png" alt="WIN BET Logo" style="width: 180px; display: block; margin: 0 auto 15px;">  
- <!-- COMPTEUR STATS -->
-<div style="background: #0D0D0D; border: 2px solid #00FF7F; border-radius: 15px; padding: 15px; text-align: center; margin: 20px 0;">
-    <h3 style="margin: 0 0 10px 0; color: #00FF7F;">📊 BILAN AVRIL 2026</h3>
-    <p style="margin: 5px 0; font-size: 28px; font-weight: bold; color: white;">18 / 25 ✅</p>
-    <p style="margin: 0; font-size: 20px; color: #00FF7F;">72% DE RÉUSSITE</p>
-</div>
-<nav>
-  <a href="#foot">FOOT</a>
-  <a href="#hockey">HOCKEY</a>
-  <a href="#basket">BASKET</a>
-</nav>
-<!-- SYSTÈME ONGLET SPORT -->
+<div id="maintenance-page" style="display:none"><div class="maintenance-wrap"><div class="icon">⚙️</div><h1>SITE EN MAINTENANCE</h1><p>On revient très vite 💪</p></div></div>
+<div id="site-normal">
+<div class="marquee"><div class="marquee-content"><span>🔥 72% DE RÉUSSITE CE MOIS | </span><span>COMBINÉ VIP 4.76 DISPONIBLE | </span><span>REJOINS LE VIP À 30.000F | </span><span>🔥 72% DE RÉUSSITE CE MOIS | </span><span>COMBINÉ VIP 4.76 DISPONIBLE | </span><span>REJOINS LE VIP À 30.000F | </span></div></div>
 <section class="sports-tabs">
-
-    <!-- LES BOUTONS EN HAUT -->
-    <div class="tab-buttons">
-        <button class="tab-btn active" onclick="openSport('foot')">⚽ FOOT</button>
-        <button class="tab-btn" onclick="openSport('hockey')">🏒 HOCKEY</button>
-        <button class="tab-btn" onclick="openSport('basket')">🏀 BASKET</button>
-    </div>
-
-    <!-- CONTENU FOOT -->
-  <div id="foot" class="tab-content active">
-    <h2>🔥 COMBINÉ FOOT DU JOUR</h2>
-    <p class="cote-total">Cote totale: 4.76</p>
-
-    <!-- CARTE 1 -->
-    <div class="match-card">
-        <div class="match-head">⚽ FOOT - COMBINÉ VIP</div>
-        <div class="match-body">
-            <h3>Brésil vs Japon</h3>
-            <p><b>Pronostic:</b> Oui - Les 2 équipes marquent</p>
-            <p><b>Cote:</b> 1.88</p>
-        </div>
-    </div>
-
-    <!-- CARTE 2 -->
-    <div class="match-card">
-        <div class="match-head">⚽ FOOT - COMBINÉ VIP</div>
-        <div class="match-body">
-            <h3>Allemagne vs Paraguay</h3>
-            <p><b>Pronostic:</b> Allemagne</p>
-            <p><b>Cote:</b> 1.36</p>
-        </div>
-    </div>
-
-    <!-- CARTE 3 -->
-    <div class="match-card">
-        <div class="match-head">⚽ FOOT - COMBINÉ VIP</div>
-        <div class="match-body">
-            <h3>Pays-Bas vs Maroc</h3>
-            <p><b>Pronostic:</b> Oui - Les 2 équipes marquent</p>
-            <p><b>Cote:</b> 1.86</p>
-        </div>
-    </div>
-
-  </div>
-
-    <!-- CONTENU HOCKEY -->
-    <div id="hockey" class="tab-content">
-        <h2>🔥 COMBINÉ HOCKEY DU JOUR</h2>
-        <p class="cote-total">Cote totale: 3.52</p>
-
-        <div class="match-card">
-            <div class="match-head">🏒 HOCKEY - COMBINÉ VIP</div>
-            <div class="match-body">
-                <h3>Canada vs USA</h3>
-                <p><b>Pronostic:</b> Plus de 5.5 Buts</p>
-                <p><b>Cote:</b> 1.95</p>
-            </div>
-        </div>
-        <!-- Ajoute tes matchs hockey ici -->
-    </div>
-
-    <!-- CONTENU BASKET -->
-    <div id="basket" class="tab-content">
-        <h2>🔥 COMBINÉ BASKET DU JOUR</h2>
-        <p class="cote-total">Cote totale: 4.10</p>
-
-        <div class="match-card">
-            <div class="match-head">🏀 BASKET - COMBINÉ VIP</div>
-            <div class="match-body">
-                <h3>Lakers vs Celtics</h3>
-                <p><b>Pronostic:</b> Victoire Lakers</p>
-                <p><b>Cote:</b> 1.80</p>
-            </div>
-        </div>
-        <!-- Ajoute tes matchs basket ici -->
-    </div>
-
+<div class="tab-buttons"><button class="tab-btn active" onclick="openTab('foot')">⚽ FOOT</button><button class="tab-btn" onclick="openTab('hockey')">🏒 HOCKEY</button><button class="tab-btn" onclick="openTab('basket')">🏀 BASKET</button></div>
+<div id="foot" class="tab-content active"><h2>🔥 COMBINÉ FOOT DU JOUR</h2><p class="cote-total">Cote totale: 4.76</p><div class="match-card"><div class="match-head">⚽ FOOT - COMBINÉ VIP</div><div class="match-body"><h3>Brésil vs Japon</h3><p><b>Pronostic:</b> Oui - Les 2 équipes marquent</p><p><b>Cote:</b> 1.88</p></div></div></div>
+<div id="hockey" class="tab-content"><h2>🏒 COMBINÉ HOCKEY DU JOUR</h2><p class="cote-total">Cote totale: 3.20</p></div>
+<div id="basket" class="tab-content"><h2>🏀 COMBINÉ BASKET DU JOUR</h2><p class="cote-total">Cote totale: 2.90</p></div>
 </section>
-
-<style>
-.sports-tabs { max-width: 420px; margin: 30px auto; padding: 0 15px; color: white; text-align: center; }
-.tab-buttons { display: flex; gap: 10px; margin-bottom: 20px; }
-.tab-btn {
-    flex: 1;
-    padding: 12px;
-    background: #1A1A1A;
-    border: 2px solid #333;
-    color: #aaa;
-    font-weight: bold;
-    border-radius: 8px;
-    cursor: pointer;
-    font-size: 14px;
-}
-.tab-btn.active {
-    background: #00FF00;
-    color: black;
-    border-color: #00FF00;
-    box-shadow: 0 0 10px rgba(0,255,0,0.3);
-}
-.tab-content { display: none; } /* Tout caché par défaut */
-.tab-content.active { display: block; } /* Seul l'actif s'affiche */
-.cote-total { color: #aaa; margin-bottom: 20px; font-size: 16px; }
-/* Recolle ici le style.match-card.match-head.match-body de tout à l'heure */
-.match-card { background: #0D1B2A; border-radius: 12px; border-left: 4px solid #00FF00; box-shadow: 0 0 15px rgba(0, 255, 0, 0.15); margin-bottom: 15px; text-align: left; overflow: hidden; }
-.match-head { background: rgba(0, 255, 0, 0.1); color: #00FF00; font-weight: bold; font-size: 13px; padding: 8px 15px; border-bottom: 1px solid rgba(0, 255, 0, 0.2); }
-.match-body { padding: 15px; }
-.match-body h3 { margin: 0 0 10px 0; font-size: 18px; }
-.match-body p { margin: 5px 0; font-size: 15px; color: #E0E0E0; }
-.match-body b { color: white; }
-</style>
-
+<div style="background:#1A1A1A;border:2px solid gold;border-radius:12px;padding:20px;text-align:center;margin:30px 20px"><h3 style="margin:0 0 10px 0;color:gold">ACCÈS VIP EXCLUSIF</h3><p style="color:#aaa;margin-bottom:15px">3 à 5 Scores Exact + Combinés @4.00+</p><p style="font-size:24px;font-weight:bold;color:white;margin:0 0 15px 0">30.000F / Mois</p><a href="https://wa.me/2250505161882?text=Salut%20Boss%20je%20veux%20le%20VIP" style="background:gold;color:black;padding:15px 25px;border-radius:8px;text-decoration:none;font-weight:bold;display:inline-block">👑 PAYER 30.000F</a></div>
+<footer>Win Bet © 2026 | 18+ | Joue responsable</footer>
+</div>
 <script>
-function openSport(sportName) {
-    // 1. Cache tout le contenu
-    let tabcontent = document.getElementsByClassName("tab-content");
-    for (let i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].classList.remove("active");
-    }
-
-    // 2. Enlève le vert sur tous les boutons
-    let tablinks = document.getElementsByClassName("tab-btn");
-    for (let i = 0; i < tablinks.length; i++) {
-        tablinks[i].classList.remove("active");
-    }
-
-    // 3. Affiche le contenu cliqué + met le bouton en vert
-    document.getElementById(sportName).classList.add("active");
-    event.currentTarget.classList.add("active");
-}
+const MODE_MAINTENANCE=false;if(MODE_MAINTENANCE===true){document.getElementById('site-normal').style.display='none';document.getElementById('maintenance-page').style.display='block'}else{document.getElementById('site-normal').style.display='block';document.getElementById('maintenance-page').style.display='none'}
+function openTab(tabName){document.querySelectorAll('.tab-content').forEach(tab=>tab.classList.remove('active'));document.querySelectorAll('.tab-btn').forEach(btn=>btn.classList.remove('active'));document.getElementById(tabName).classList.add('active');event.currentTarget.classList.add('active')}
 </script>
-
-<!-- RÉSULTATS DU JOUR -->
-<h2 style="color: #00FF7F; margin-top: 40px; text-align: center;">RÉSULTATS DU JOUR</h2>
-
-<div style="background: #1A1A1A; border: 2px solid #00FF7F; border-radius: 10px; padding: 15px; margin-bottom: 15px;">
-    <h3 style="margin: 0 0 10px 0; color: #00FF7F;">⚽ FOOTBALL - LDC</h3>
-    <p style="margin: 5px 0; font-weight: bold;">Real Madrid vs Bayern</p>
-    <p style="margin: 5px 0; color: #00FF7F;">Score Final: 2-1 ✅ GAGNÉ</p>
-    <p style="margin: 5px 0; font-size: 14px; color: #aaa;">Pronostic: Score Exact 2-1 | Cote: 8.50</p>
-</div>
-
-<div style="background: #1A1A1A; border: 2px solid red; border-radius: 10px; padding: 15px; margin-bottom: 15px;">
-    <h3 style="margin: 0 0 10px 0; color: red;">🏀 BASKET - NBA</h3>
-    <p style="margin: 5px 0; font-weight: bold;">Lakers vs Warriors</p>
-    <p style="margin: 5px 0; color: red;">Score Final: 98-105 ❌ PERDU</p>
-    <p style="margin: 5px 0; font-size: 14px; color: #aaa;">Pronostic: +210.5 Points | Cote: 1.90</p>
-</div>
-
-<!-- MATCHS PASSÉS -->
-<h2 style="color: #00FF7F; margin-top: 40px; text-align: center;">MATCHS PASSÉS</h2>
-
-<div style="background: #1A1A1A; border-left: 4px solid #00FF7F; padding: 10px; margin-bottom: 10px;">
-    <p style="margin: 0; font-size: 14px;"><b>22/04</b> - Brésil 2-0 Japon ✅</p>
-</div>
-<div style="background: #1A1A1A; border-left: 4px solid #00FF7F; padding: 10px; margin-bottom: 10px;">
-    <p style="margin: 0; font-size: 14px;"><b>21/04</b> - Barça 3-1 PSG ✅</p>
-<!-- SECTION VIP PAYANTE 30K -->
-<h2 style="color: gold; margin-top: 40px; text-align: center;">🔒 ESPACE VIP</h2>
-
-<div style="background: #1A1A1A; border: 2px solid gold; border-radius: 10px; padding: 20px; text-align: center;">
-    <h3 style="margin: 0 0 10px 0; color: gold;">ACCÈS VIP EXCLUSIF</h3>
-    <p style="color: #aaa; margin-bottom: 15px;">3 à 5 Scores Exact 9.00+ / Jour. Bilan 80%+</p>
-    <p style="font-size: 24px; font-weight: bold; color: white; margin: 10px 0;">30.000F / Semaine</p>
-    
-    <a href="https://wa.me/2250505161882?text=Salut%20Boss%20je%20veux%20payer%20le%20VIP%20WB%20WIN%20BET%2030.000F%20pour%20la%20semaine" 
-       style="background: gold; color: black; padding: 15px 25px; border-radius: 8px; text-decoration: none; font-weight: bold; font-size: 18px; display: block;">
-        💰 PAYER 30.000F ET RECEVOIR LE LIEN VIP
-    </a>
-</div>
-</div>
-    <!-- 201. TON FOOTER VIP 30K -->
-    <div style="background: #1A1A1A; border: 2px solid gold; border-radius: 12px; padding: 20px; text-align: center; margin-top: 30px;">
-        <h3 style="margin: 0 0 10px 0; color: gold;">ACCÈS VIP EXCLUSIF</h3>
-        <p style="color: #aaa; margin-bottom: 15px;">3 à 5 Scores Exact + Combinés @4.00+</p>
-        <p style="font-size: 24px; font-weight: bold; color: white; margin: 0 0 15px 0;">30.000F / Mois</p>
-        <a href="https://wa.me/2250505161882?text=Salut%20Boss%20je%20veux%20le%20VIP" 
-           style="background: gold; color: black; padding: 15px 25px; border-radius: 8px; text-decoration: none; font-weight: bold; display: inline-block;">
-           👑 PAYER 30.000F ET RECEVOIR LE LIEN VIP
-        </a>
-    </div>
-</div> <!-- FIN DE #site-normal -->
-
-<!-- 202. FOOTER BAS DE PAGE -->
-<footer style="padding:20px; font-size:12px; color:#aaa; text-align:center;">
-    Win Bet © 2026 | 18+ | Joue responsable
-</footer>
-
-</div> <!-- FIN DE #site-normal -->
-
-<!-- 3. SCRIPT ON/OFF TOUT EN BAS -->
-<script>
-const MODE_MAINTENANCE = false; 
-if (MODE_MAINTENANCE === true) {
-    document.getElementById('site-normal').style.display = 'none';
-    document.getElementById('maintenance-page').style.display = 'block';
-} else {
-    document.getElementById('site-normal').style.display = 'block';
-    document.getElementById('maintenance-page').style.display = 'none';
-}
-</script>
-</body> <!-- 1 SEUL BODY QUI FERME ICI -->
-</html>
-</footer>
-    <!-- 1. MAINTENANCE CACHÉE -->
-    <div id="maintenance-page" style="display: none;">
-        <style>.maintenance-wrap{height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;background:#000;color:white;text-align:center;padding:20px;}.maintenance-wrap h1{font-size:40px;color:#FFD700;}.maintenance-wrap .icon{font-size:60px;margin-bottom:20px;animation:spin 2s linear infinite;}@keyframes spin{100%{transform:rotate(360deg);}}</style>
-        <div class="maintenance-wrap"><div class="icon">⚙️</div><h1>SITE EN MAINTENANCE</h1><p>On revient très vite 💪</p></div>
-    </div>
-
-    <!-- 2. TON SITE NORMAL -->
-    <div id="site-normal">
-        
-        <!-- ICI TON BANDEAU -->
-        <div class="marquee"> ... ton code bandeau ... </div>
-        
-        <!-- ICI TES ONGLETS FOOT/HOCKEY/BASKET -->
-        <section class="sports-tabs"> ... </section>
-
-        <!-- ICI TON FOOTER -->
-        <footer style="padding:20px; font-size:12px; color:#aaa">
-            Win Bet © 2026 | 18+ | Joue responsable
-        </footer>
-
-    </div>
-
-    <!-- 3. SCRIPT ON/OFF TOUT EN BAS -->
-    <script>
-    const MODE_MAINTENANCE = false; 
-    if (MODE_MAINTENANCE === true) {
-        document.getElementById('site-normal').style.display = 'none';
-        document.getElementById('maintenance-page').style.display = 'block';
-    }
-    </script>
 </body>
-</html>
 </html>
