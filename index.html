@@ -3,79 +3,112 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Win Bet VIP</title>
+<title>NDEKELLER PRO - VIP</title>
 <style>
-body{background:#000;color:white;font-family:Arial,sans-serif;margin:0;padding:0}.marquee{width:100%;overflow:hidden;background:#000;border-bottom:2px solid gold;padding:10px 0}.marquee-content{display:inline-block;white-space:nowrap;animation:marquee 20s linear infinite}.marquee-content span{color:gold;font-weight:bold;font-size:14px;padding-right:40px}@keyframes marquee{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}.sports-tabs{padding:20px}.tab-buttons{display:flex;gap:10px;margin-bottom:20px}.tab-btn{flex:1;padding:12px;background:#1A1A1A;color:gold;border:2px solid gold;border-radius:8px;font-weight:bold;cursor:pointer}.tab-btn.active{background:gold;color:black}.tab-content{display:none}.tab-content.active{display:block}.match-card{background:#1A1A1A;border:2px solid gold;border-radius:12px;padding:15px;margin-bottom:15px}.match-head{color:gold;font-weight:bold;margin-bottom:10px}.match-body h3{margin:0 0 8px 0}.cote-total{color:#00FF00;font-weight:bold;font-size:18px}footer{padding:20px;font-size:12px;color:#aaa;text-align:center}.maintenance-wrap{height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;background:#000;text-align:center;padding:20px}.maintenance-wrap h1{font-size:40px;color:#FFD700}.maintenance-wrap .icon{font-size:60px;margin-bottom:20px;animation:spin 2s linear infinite}@keyframes spin{100%{transform:rotate(360deg)}}
-<style>
-.tab-content{display:none;} 
-.tab-content.active{display:block;} 
-.tab-btn.active{background:gold;color:#000;}
+body{background:#000;color:#fff;font-family:Arial;margin:0;padding:0;}
+header{background:#111;padding:15px;text-align:center;border-bottom:2px solid gold;}
+header h1{color:gold;margin:0;font-size:20px;}
+.sports-tabs{display:flex;gap:5px;padding:10px;background:#0a0a0a;overflow-x:auto;}
+.tab-btn{flex:1;padding:12px;background:#222;color:#fff;border:2px solid #333;border-radius:8px;font-weight:bold;cursor:pointer;font-size:14px;white-space:nowrap;}
+.tab-btn.active{background:gold;color:#000;border-color:gold;}
+.tab-content{display:none;padding:15px;}
+.tab-content.active{display:block;}
+.match{background:#111;border:1px solid #333;border-radius:10px;padding:12px;margin-bottom:12px;}
+.match h3{margin:0 0 8px;color:gold;font-size:16px;}
+.cote{float:right;color:#0f0;font-weight:bold;}
+.score{font-size:18px;font-weight:bold;}
+.score.win{color:#0f0;} .score.loss{color:#f00;}
+.analyse{font-size:13px;color:#aaa;margin-top:5px;}
+.cote-total{text-align:center;font-size:24px;color:gold;font-weight:bold;margin:15px 0;background:#222;padding:10px;border-radius:8px;}
+.empty{color:#666;text-align:center;padding:40px 0;font-size:16px;}
+#maintenance-screen{background:#000;position:fixed;top:0;left:0;width:100%;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;z-index:9999;}
+#maintenance-screen h1{color:gold;font-size:24px;}
 </style>
 </head>
 <body>
-<div id="maintenance-page" style="display:none"><div class="maintenance-wrap"><div class="icon">⚙️</div><h1>SITE EN MAINTENANCE</h1><p>On revient très vite 💪</p></div></div>
-<div id="site-normal">
-<div class="marquee"><div class="marquee-content"><span>🔥 72% DE RÉUSSITE CE MOIS | </span><span>COMBINÉ VIP 4.76 DISPONIBLE | </span><span>REJOINS LE VIP À 30.000F | </span><span>🔥 72% DE RÉUSSITE CE MOIS | </span><span>COMBINÉ VIP 3.06 DISPONIBLE | </span><span>REJOINS LE VIP À 30.000F | </span></div></div>
-<section class="sports-tabs"><button class="tab-btn" onclick="openTab('bilan')">BILAN VIP</button>
-<div class="tab-buttons"><button class="tab-btn active" onclick="openTab('foot')">⚽ FOOT</button><button class="tab-btn" onclick="openTab('hockey')">🏒 HOCKEY</button><button class="tab-btn" onclick="openTab('basket')">🏀 BASKET</button></div>
-<div class="match-card">
-   <h3>⚽ FOOT - COMBINÉ VIP DU JOUR</h3>
-   <p><b>1. Côte d'Ivoire vs Norvège</b></p>
-   <p>Pronostic: Double chance Côte d'Ivoire ou Nul</p>
-   <p>Cote: 1.67</p>
-</div>
-<div class="match-card" style="margin-top:10px;">
-   <p><b>2. France vs Suède</b></p>
-   <p>Pronostic: Victoire France - Temps rég.</p>
-   <p>Cote: 1.30</p>
-</div>
-<div class="match-card" style="margin-top:10px;">
-   <p><b>3. Mexique vs Équateur</b></p>
-   <p>Pronostic: Moins de 2,5 buts</p>
-   <p>Cote: 1.41</p>
-</div>
-<p class="cote-total">Cote totale: 3.06</p>
-   <div id="hockey" class="tab-content"><h2>🏒 COMBINÉ HOCKEY DU JOUR</h2><p class="cote-total">Cote totale: 3.20</p></div>
-<div id="basket" class="tab-content"><h2>🏀 COMBINÉ BASKET DU JOUR</h2><p class="cote-total">Cote totale: 2.90</p></div>
-<div id="bilan" class="tab-content">
-  <h2 style="text-align:center;">📊 BILAN VIP - 26 JUIN 2026</h2>
-  <p style="text-align:center;color:#888;margin-bottom:30px;">2 GAGNÉS / 1 PERDU = 67% de réussite</p>
 
-  <h3 style="color:#00ff88;">✅ GAGNÉS : 2/3</h3>
-  
-  <div class="match-card" style="border-left:4px solid #00ff88;background:#0A1A0A;">
-     <p><b>Brésil vs Japon</b> | Oui BTTS @1.88</p>
-     <p style="margin:5px 0;color:#aaa;">Score final: 2-1</p>
-     <p style="color:#00ff88;font-weight:bold;margin:0;">STATUT: VALIDÉ ✅</p>
+<div id="maintenance-screen"><h1>⚠️ MAINTENANCE EN COURS</h1></div>
+
+<div id="site-normal" style="display:none;">
+  <header><h1>🔥 NDEKELLER PRO - VIP</h1></header>
+
+  <section class="sports-tabs">
+    <button class="tab-btn active" onclick="openTab('foot')">⚽ FOOT</button>
+    <button class="tab-btn" onclick="openTab('hockey')">🏒 HOCKEY</button>
+    <button class="tab-btn" onclick="openTab('basket')">🏀 BASKET</button>
+    <button class="tab-btn" onclick="openTab('bilan')">📊 BILAN VIP</button>
+  </section>
+
+  <!-- AUJOURD'HUI -->
+  <div id="foot" class="tab-content active">
+    <h2>COMBINÉ FOOT DU JOUR</h2>
+    <p class="cote-total">Cote totale: 3.06</p>
+    <div class="match">
+      <h3>🇨🇮 Côte d'Ivoire vs Norvège <span class="cote">1.67</span></h3>
+      <p class="score">Pronostic: Double chance Côte d'Ivoire ou Nul</p>
+      <p class="analyse">Les Éléphants ne perdent pas à domicile.</p>
+    </div>
+    <div class="match">
+      <h3>🇫🇷 France vs Suède <span class="cote">1.30</span></h3>
+      <p class="score">Pronostic: Victoire France tps rég.</p>
+      <p class="analyse">Les Bleus largement supérieurs.</p>
+    </div>
+    <div class="match">
+      <h3>🇲🇽 Mexique vs Équateur <span class="cote">1.41</span></h3>
+      <p class="score">Pronostic: Moins de 2.5 buts</p>
+      <p class="analyse">Match fermé, under validé.</p>
+    </div>
   </div>
 
-  <div class="match-card" style="border-left:4px solid #00ff88;background:#0A1A0A;">
-     <p><b>Maroc vs Pays-Bas</b> | Oui BTTS @1.86</p>
-     <p style="margin:5px 0;color:#aaa;">Score final: 1-1</p>
-     <p style="color:#00ff88;font-weight:bold;margin:0;">STATUT: VALIDÉ ✅</p>
+  <!-- HOCKEY VIDE -->
+  <div id="hockey" class="tab-content">
+    <h2>COMBINÉ HOCKEY DU JOUR</h2>
+    <p class="empty">Bientôt disponible...</p>
   </div>
 
-  <h3 style="color:#ff4444;margin-top:30px;">❌ PERDUS : 1/3</h3>
-
-  <div class="match-card" style="border-left:4px solid #ff4444;">
-     <p><b>Allemagne vs Paraguay</b> | Victoire Allemagne @1.36</p>
-     <p style="margin:5px 0;color:#aaa;">Score final: 1-1</p>
-     <p style="color:#ff4444;font-weight:bold;margin:0;">STATUT: PERDU ❌</p>
+  <!-- BASKET VIDE -->
+  <div id="basket" class="tab-content">
+    <h2>COMBINÉ BASKET DU JOUR</h2>
+    <p class="empty">Bientôt disponible...</p>
   </div>
+
+  <!-- HIER -->
+  <div id="bilan" class="tab-content">
+    <h2>📊 BILAN VIP - HIER | Cote: 4.76</h2>
+    <div class="match">
+      <h3>🇧🇷 Brésil vs Japon <span class="cote">1.88</span></h3>
+      <p class="score win">Résultat: 2-1 ✅</p>
+      <p class="analyse">Les 2 équipes marquent = VALIDÉ</p>
+    </div>
+    <div class="match">
+      <h3>🇩🇪 Allemagne vs Paraguay <span class="cote">1.36</span></h3>
+      <p class="score loss">Résultat: 1-1 ❌</p>
+      <p class="analyse">Victoire Allemagne = PERDU</p>
+    </div>
+    <div class="match">
+      <h3>🇲🇦 Maroc vs Pays-Bas <span class="cote">1.86</span></h3>
+      <p class="score win">Résultat: 1-1 ✅</p>
+      <p class="analyse">Les 2 équipes marquent = VALIDÉ</p>
+    </div>
+  </div>
+
 </div>
-</section>
-<div style="background:#1A1A1A;border:2px solid gold;border-radius:12px;padding:20px;text-align:center;margin:30px 20px"><h3 style="margin:0 0 10px 0;color:gold">ACCÈS VIP EXCLUSIF</h3><p style="color:#aaa;margin-bottom:15px">3 à 5 Scores Exact + Combinés @4.00+</p><p style="font-size:24px;font-weight:bold;color:white;margin:0 0 15px 0">30.000F / Mois</p><a href="https://wa.me/2250505161882?text=Salut%20Boss%20je%20veux%20le%20VIP" style="background:gold;color:black;padding:15px 25px;border-radius:8px;text-decoration:none;font-weight:bold;display:inline-block">👑 PAYER 30.000F</a></div>
-<footer>Win Bet © 2026 | 18+ | Joue responsable</footer>
-</div>
+
 <script>
-const MODE_MAINTENANCE=false ;if(MODE_MAINTENANCE===true){document.getElementById('site-normal').style.display='none';document.getElementById('maintenance-page').style.display='block'}else{document.getElementById('site-normal').style.display='block';document.getElementById('maintenance-page').style.display='none'}
-function openTab(tabName){document.querySelectorAll('.tab-content').forEach(tab=>tab.classList.remove('active'));document.querySelectorAll('.tab-btn').forEach(btn=>btn.classList.remove('active'));document.getElementById(tabName).classList.add('active');event.currentTarget.classList.add('active')}
-<!-- BOUTON VIP FLOTTANT -->
-<a href="https://wa.me/2250505161882?text=Salut%20Boss%20je%20veux%20payer%20le%20VIP%2030K" 
-   style="position:fixed;bottom:20px;right:20px;z-index:9999;background:gold;color:black;padding:15px 20px;border-radius:50px;font-weight:bold;text-decoration:none;box-shadow:0 4px 15px rgba(255,215,0,0.5);display:flex;align-items:center;gap:8px;animation:pulse 2s infinite">
-   👑 VIP 30K
-</a>
-<style>@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(255,215,0,0.7)}70%{box-shadow:0 0 0 10px rgba(255,215,0,0)}100%{box-shadow:0 0 0 0 rgba(255,215,0,0)}}</style>
+const MODE_MAINTENANCE=false; // FALSE = SITE ALLUMÉ
+
+if(MODE_MAINTENANCE===false){
+  document.getElementById('maintenance-screen').style.display='none';
+  document.getElementById('site-normal').style.display='block';
+}
+
+function openTab(tabId){
+  document.querySelectorAll('.tab-content').forEach(t=>t.classList.remove('active'));
+  document.querySelectorAll('.tab-btn').forEach(b=>b.classList.remove('active'));
+  document.getElementById(tabId).classList.add('active');
+  event.target.classList.add('active');
+}
 </script>
+
 </body>
-</html>
+   </html>
