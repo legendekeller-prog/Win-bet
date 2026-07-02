@@ -3,11 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>LEGENDEKELLER - VIP</title>
+<title>LÉGENDE KELLER - VIP</title>
 <style>
 body{background:#000;color:#fff;font-family:Arial;margin:0;padding:0;}
-header{background:#111;padding:0;text-align:center;border-bottom:2px solid gold;}
-header img{width:100%;max-width:500px;display:block;margin:0 auto;}
+header{background:#000;padding:10px;text-align:center;border-bottom:2px solid gold;}
+header img{width:100%;max-width:280px;display:block;margin:0 auto;}
 .sports-tabs{display:flex;gap:5px;padding:10px;background:#0a0a0a;overflow-x:auto;}
 .tab-btn{flex:1;padding:12px;background:#222;color:#fff;border:2px solid #333;border-radius:8px;font-weight:bold;cursor:pointer;font-size:14px;white-space:nowrap;}
 .tab-btn.active{background:gold;color:#000;border-color:gold;}
@@ -31,7 +31,7 @@ header img{width:100%;max-width:500px;display:block;margin:0 auto;}
 
 <div id="site-normal" style="display:none;">
   <header>
-    <img src="https://i.imgur.com/An9JBtB.jpeg" alt="LÉGENDE KELLER">
+    <img src="attachment://27210717361955455" alt="LÉGENDE KELLER LK">
   </header>
 
   <section class="sports-tabs">
@@ -41,56 +41,47 @@ header img{width:100%;max-width:500px;display:block;margin:0 auto;}
     <button class="tab-btn" onclick="openTab('bilan')">📊 BILAN VIP</button>
   </section>
 
-  <!-- AUJOURD'HUI -->
+  <!-- AUJOURD'HUI = 3.53 -->
   <div id="foot" class="tab-content active">
     <h2>COMBINÉ FOOT DU JOUR</h2>
-    <p class="cote-total">Cote totale: 3.16</p>
+    <p class="cote-total">Cote totale: 3.53</p>
     <div class="match">
-      <h3>🏴󠁧󠁢󠁥󠁮󠁧󠁿 Angleterre vs RD Congo <span class="cote">1.29</span></h3>
-      <p class="score">Pronostic: Victoire Angleterre tps rég.</p>
-      <p class="analyse">Les Three Lions largement au-dessus.</p>
+      <h3>🇪🇸 Espagne vs Autriche 🇦🇹 <span class="cote">1.33</span></h3>
+      <p class="score">Pronostic: Victoire Espagne tps rég.</p>
+      <p class="analyse">La Roja largement favorite.</p>
     </div>
     <div class="match">
-      <h3>🇺🇸 USA vs Bosnie-Herzégovine <span class="cote">1.40</span></h3>
-      <p class="score">Pronostic: Victoire USA tps rég.</p>
-      <p class="analyse">Les Américains favoris à domicile.</p>
+      <h3>🇵🇹 Portugal vs Croatie 🇭🇷 <span class="cote">1.42</span></h3>
+      <p class="score">Pronostic: Moins de 3.5 buts</p>
+      <p class="analyse">Match fermé entre 2 grosses défenses.</p>
     </div>
     <div class="match">
-      <h3>🇧🇪 Belgique vs Sénégal <span class="cote">1.75</span></h3>
+      <h3>🇨🇭 Suisse vs Algérie 🇩🇿 <span class="cote">1.87</span></h3>
       <p class="score">Pronostic: Les 2 équipes marquent</p>
       <p class="analyse">Choc ouvert. BTTS validé.</p>
     </div>
   </div>
 
-  <!-- HOCKEY VIDE -->
-  <div id="hockey" class="tab-content">
-    <h2>COMBINÉ HOCKEY DU JOUR</h2>
-    <p class="empty">Bientôt disponible...</p>
-  </div>
+  <div id="hockey" class="tab-content"><h2>COMBINÉ HOCKEY DU JOUR</h2><p class="empty">Bientôt disponible...</p></div>
+  <div id="basket" class="tab-content"><h2>COMBINÉ BASKET DU JOUR</h2><p class="empty">Bientôt disponible...</p></div>
 
-  <!-- BASKET VIDE -->
-  <div id="basket" class="tab-content">
-    <h2>COMBINÉ BASKET DU JOUR</h2>
-    <p class="empty">Bientôt disponible...</p>
-  </div>
-
-  <!-- HIER = 2/3 -->
+  <!-- HIER = 3/3 CARTON -->
   <div id="bilan" class="tab-content">
-    <h2>📊 BILAN VIP - HIER | 2/3 ✅ | Cote: 1.83</h2>
+    <h2>📊 BILAN VIP - HIER | 3/3 CARTON ✅ | Cote: 3.59</h2>
     <div class="match">
-      <h3>🇨🇮 Côte d'Ivoire vs Norvège <span class="cote">1.67</span></h3>
-      <p class="score loss">Résultat: 1-2 ❌</p>
-      <p class="analyse">Double chance CI ou Nul = PERDU</p>
+      <h3>🏴󠁧󠁢󠁥󠁮󠁧󠁿 Angleterre vs Congo 🇨🇬 <span class="cote">1.29</span></h3>
+      <p class="score win">Résultat: 2-1 VALIDÉ ✅</p>
+      <p class="analyse">Victoire Angleterre tps rég = VALIDÉ</p>
     </div>
     <div class="match">
-      <h3>🇫🇷 France vs Suède <span class="cote">1.30</span></h3>
-      <p class="score win">Résultat: 3-0 ✅</p>
-      <p class="analyse">Victoire France tps rég = VALIDÉ</p>
+      <h3>🇧🇪 Belgique vs Sénégal 🇸🇳 <span class="cote">1.75</span></h3>
+      <p class="score win">Résultat: VALIDÉ ✅</p>
+      <p class="analyse">Les 2 équipes marquent = VALIDÉ</p>
     </div>
     <div class="match">
-      <h3>🇲🇽 Mexique vs Équateur <span class="cote">1.41</span></h3>
-      <p class="score win">Résultat: 2-0 ✅</p>
-      <p class="analyse">Moins de 2.5 buts = VALIDÉ</p>
+      <h3>🇺🇸 USA vs Bosnie-Herzégovine 🇧🇦 <span class="cote">1.40</span></h3>
+      <p class="score win">Résultat: 2-0 VALIDÉ ✅</p>
+      <p class="analyse">Victoire USA tps rég = VALIDÉ</p>
     </div>
   </div>
 
@@ -98,12 +89,10 @@ header img{width:100%;max-width:500px;display:block;margin:0 auto;}
 
 <script>
 const MODE_MAINTENANCE=false;
-
 if(MODE_MAINTENANCE===false){
   document.getElementById('maintenance-screen').style.display='none';
   document.getElementById('site-normal').style.display='block';
 }
-
 function openTab(tabId){
   document.querySelectorAll('.tab-content').forEach(t=>t.classList.remove('active'));
   document.querySelectorAll('.tab-btn').forEach(b=>b.classList.remove('active'));
@@ -111,6 +100,5 @@ function openTab(tabId){
   event.target.classList.add('active');
 }
 </script>
-
 </body>
 </html>
