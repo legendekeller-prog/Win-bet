@@ -7,7 +7,7 @@
 <style>
 body{background:#000;color:#fff;font-family:Arial;margin:0;padding:0;}
 header{background:#000;padding:10px;text-align:center;border-bottom:2px solid gold;}
-header img{width:100%;max-width:160px;display:block;margin:0 auto;} /* <- PASSÉ DE 280px à 160px */
+header img{width:100%;max-width:160px;display:block;margin:0 auto;}
 .sports-tabs{display:flex;gap:5px;padding:10px;background:#0a0a0a;overflow-x:auto;}
 .tab-btn{flex:1;padding:12px;background:#222;color:#fff;border:2px solid #333;border-radius:8px;font-weight:bold;cursor:pointer;font-size:14px;white-space:nowrap;}
 .tab-btn.active{background:gold;color:#000;border-color:gold;}
@@ -31,7 +31,7 @@ header img{width:100%;max-width:160px;display:block;margin:0 auto;} /* <- PASSÉ
 
 <div id="site-normal" style="display:none;">
   <header>
-    <img src="logo%20lk.png?v=23" alt="LÉGENDE KELLER LK">
+    <img src="logo%20lk.png?v=25" alt="LÉGENDE KELLER LK">
   </header>
 
   <section class="sports-tabs">
@@ -41,41 +41,44 @@ header img{width:100%;max-width:160px;display:block;margin:0 auto;} /* <- PASSÉ
     <button class="tab-btn" onclick="openTab('bilan')">📊 BILAN VIP</button>
   </section>
 
-  <!-- AUJOURD'HUI = 3.53 -->
+  <!-- AUJOURD'HUI = 2.73 -->
   <div id="foot" class="tab-content active">
     <h2>COMBINÉ FOOT DU JOUR</h2>
-    <p class="cote-total">Cote totale: 3.53</p>
+    <p class="cote-total">Cote totale: 2.73</p>
     <div class="match">
-      <h3>🇪🇸 Espagne vs Autriche 🇦🇹 <span class="cote">1.33</span></h3>
-      <p class="score">Pronostic: Victoire Espagne tps rég.</p>
+      <h3>🇦🇺 Australie vs Égypte 🇪🇬 <span class="cote">1.67</span></h3>
+      <p class="score">Pronostic: Qualification Égypte</p>
+      <p class="analyse">Les Pharaons ont l'expérience.</p>
     </div>
     <div class="match">
-      <h3>🇵🇹 Portugal vs Croatie 🇭🇷 <span class="cote">1.42</span></h3>
-      <p class="score">Pronostic: Moins de 3.5 buts</p>
+      <h3>🇦🇷 Argentine vs Cap-Vert 🇨🇻 <span class="cote">1.15</span></h3>
+      <p class="score">Pronostic: Victoire Argentine</p>
+      <p class="analyse">L'Albiceleste trop forte sur papier.</p>
     </div>
     <div class="match">
-      <h3>🇨🇭 Suisse vs Algérie 🇩🇿 <span class="cote">1.87</span></h3>
-      <p class="score">Pronostic: Les 2 équipes marquent</p>
+      <h3>🇨🇴 Colombie vs Ghana 🇬🇭 <span class="cote">1.42</span></h3>
+      <p class="score">Pronostic: Victoire Colombie</p>
+      <p class="analyse">Les Cafeteros à domicile.</p>
     </div>
   </div>
 
   <div id="hockey" class="tab-content"><h2>COMBINÉ HOCKEY DU JOUR</h2><p class="empty">Bientôt disponible...</p></div>
   <div id="basket" class="tab-content"><h2>COMBINÉ BASKET DU JOUR</h2><p class="empty">Bientôt disponible...</p></div>
 
-  <!-- HIER = 3/3 CARTON -->
+  <!-- HIER = 2/3 -->
   <div id="bilan" class="tab-content">
-    <h2>📊 BILAN VIP - HIER | 3/3 CARTON ✅ | Cote: 3.59</h2>
+    <h2>📊 BILAN VIP - HIER | 2/3 ✅ | Transparence LK</h2>
     <div class="match">
-      <h3>🏴󠁧󠁢󠁥󠁮󠁧󠁿 Angleterre vs Congo 🇨🇬 <span class="cote">1.29</span></h3>
+      <h3>🇪🇸 Espagne vs Autriche 🇦🇹 <span class="cote">1.33</span></h3>
+      <p class="score win">Résultat: 3-0 VALIDÉ ✅</p>
+    </div>
+    <div class="match">
+      <h3>🇵🇹 Portugal vs Croatie 🇭🇷 <span class="cote">1.42</span></h3>
       <p class="score win">Résultat: 2-1 VALIDÉ ✅</p>
     </div>
     <div class="match">
-      <h3>🇧🇪 Belgique vs Sénégal 🇸🇳 <span class="cote">1.75</span></h3>
-      <p class="score win">Résultat: VALIDÉ ✅</p>
-    </div>
-    <div class="match">
-      <h3>🇺🇸 USA vs Bosnie-Herzégovine 🇧🇦 <span class="cote">1.40</span></h3>
-      <p class="score win">Résultat: 2-0 VALIDÉ ✅</p>
+      <h3>🇨🇭 Suisse vs Algérie 🇩🇿 <span class="cote">1.87</span></h3>
+      <p class="score loss">Résultat: 2-0 PERDU ❌</p>
     </div>
   </div>
 
