@@ -18,20 +18,15 @@ header img{width:100%;max-width:160px;display:block;margin:0 auto;}
 .cote{float:right;color:#0f0;font-weight:bold;}
 .score{font-size:18px;font-weight:bold;}
 .score.win{color:#0f0;} .score.loss{color:#f00;}
-.analyse{font-size:13px;color:#aaa;margin-top:5px;}
 .cote-total{text-align:center;font-size:24px;color:gold;font-weight:bold;margin:15px 0;background:#222;padding:10px;border-radius:8px;}
 .empty{color:#666;text-align:center;padding:40px 0;font-size:16px;}
-#maintenance-screen{background:#000;position:fixed;top:0;left:0;width:100%;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;z-index:9999;}
-#maintenance-screen h1{color:gold;font-size:24px;}
 </style>
 </head>
 <body>
 
-<div id="maintenance-screen"><h1>⚠️ MAINTENANCE EN COURS</h1></div>
-
-<div id="site-normal" style="display:none;">
+<div id="site-normal">
   <header>
-    <img src="logo%20lk.png?v=25" alt="LÉGENDE KELLER LK">
+    <img src="logolk.png?v=27" alt="LÉGENDE KELLER LK">
   </header>
 
   <section class="sports-tabs">
@@ -41,33 +36,28 @@ header img{width:100%;max-width:160px;display:block;margin:0 auto;}
     <button class="tab-btn" onclick="openTab('bilan')">📊 BILAN VIP</button>
   </section>
 
-  <!-- AUJOURD'HUI = 2.73 -->
   <div id="foot" class="tab-content active">
     <h2>COMBINÉ FOOT DU JOUR</h2>
     <p class="cote-total">Cote totale: 2.73</p>
     <div class="match">
       <h3>🇦🇺 Australie vs Égypte 🇪🇬 <span class="cote">1.67</span></h3>
       <p class="score">Pronostic: Qualification Égypte</p>
-      <p class="analyse">Les Pharaons ont l'expérience.</p>
     </div>
     <div class="match">
       <h3>🇦🇷 Argentine vs Cap-Vert 🇨🇻 <span class="cote">1.15</span></h3>
       <p class="score">Pronostic: Victoire Argentine</p>
-      <p class="analyse">L'Albiceleste trop forte sur papier.</p>
     </div>
     <div class="match">
       <h3>🇨🇴 Colombie vs Ghana 🇬🇭 <span class="cote">1.42</span></h3>
       <p class="score">Pronostic: Victoire Colombie</p>
-      <p class="analyse">Les Cafeteros à domicile.</p>
     </div>
   </div>
 
   <div id="hockey" class="tab-content"><h2>COMBINÉ HOCKEY DU JOUR</h2><p class="empty">Bientôt disponible...</p></div>
   <div id="basket" class="tab-content"><h2>COMBINÉ BASKET DU JOUR</h2><p class="empty">Bientôt disponible...</p></div>
 
-  <!-- HIER = 2/3 -->
   <div id="bilan" class="tab-content">
-    <h2>📊 BILAN VIP - HIER | 2/3 ✅ | Transparence LK</h2>
+    <h2>📊 BILAN VIP - HIER | 2/3 ✅</h2>
     <div class="match">
       <h3>🇪🇸 Espagne vs Autriche 🇦🇹 <span class="cote">1.33</span></h3>
       <p class="score win">Résultat: 3-0 VALIDÉ ✅</p>
@@ -85,11 +75,6 @@ header img{width:100%;max-width:160px;display:block;margin:0 auto;}
 </div>
 
 <script>
-const MODE_MAINTENANCE=false;
-if(MODE_MAINTENANCE===false){
-  document.getElementById('maintenance-screen').style.display='none';
-  document.getElementById('site-normal').style.display='block';
-}
 function openTab(tabId){
   document.querySelectorAll('.tab-content').forEach(t=>t.classList.remove('active'));
   document.querySelectorAll('.tab-btn').forEach(b=>b.classList.remove('active'));
