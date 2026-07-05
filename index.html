@@ -17,16 +17,17 @@ header img{width:100%;max-width:160px;display:block;margin:0 auto;}
 .match h3{margin:0 0 8px;color:gold;font-size:16px;}
 .cote{float:right;color:#0f0;font-weight:bold;}
 .score{font-size:18px;font-weight:bold;}
-.score.win{color:#0f0;} .score.loss{color:#f00;}
+.score.win{color:#0f0;} .score.loss{color:#f00;} .score.pending{color:#ffaa00;}
 .cote-total{text-align:center;font-size:24px;color:gold;font-weight:bold;margin:15px 0;background:#222;padding:10px;border-radius:8px;}
 .empty{color:#666;text-align:center;padding:40px 0;font-size:16px;}
+.badge-serie{background:gold;color:#000;text-align:center;padding:8px;border-radius:8px;font-weight:bold;margin-bottom:15px;}
 </style>
 </head>
 <body>
 
 <div id="site-normal">
   <header>
-    <img src="logolk.png?v=28" alt="LÉGENDE KELLER LK">
+    <img src="logolk.png?v=29" alt="LÉGENDE KELLER LK">
   </header>
 
   <section class="sports-tabs">
@@ -36,28 +37,47 @@ header img{width:100%;max-width:160px;display:block;margin:0 auto;}
     <button class="tab-btn" onclick="openTab('bilan')">📊 BILAN VIP</button>
   </section>
 
-  <!-- AUJOURD'HUI = 2.12 -->
+  <!-- AUJOURD'HUI = 3.34 -->
   <div id="foot" class="tab-content active">
-    <h2>COMBINÉ FOOT DU JOUR</h2>
-    <p class="cote-total">Cote totale: 2.12</p>
+    <h2>COMBINÉ VIP DU JOUR</h2>
+    <p class="cote-total">Cote totale: 3.34</p>
+    
     <div class="match">
-      <h3>🇨🇦 Canada vs Maroc 🇲🇦 <span class="cote">1.77</span></h3>
-      <p class="score">Pronostic: Victoire Maroc</p>
-      <p style="font-size:13px;color:#aaa;">Résultat du match temps réglementaire</p>
+      <h3>🇧🇷 Brésil vs Norvège 🇳🇴 <span class="cote">1.67</span></h3>
+      <p class="score pending">Pronostic: Les 2 équipes marquent</p>
+      <p style="font-size:13px;color:#aaa;">Temps réglementaire</p>
     </div>
     <div class="match">
-      <h3>🇵🇾 Paraguay vs France 🇫🇷 <span class="cote">1.20</span></h3>
-      <p class="score">Pronostic: Victoire France</p>
-      <p style="font-size:13px;color:#aaa;">Résultat du match temps réglementaire</p>
+      <h3>🇲🇽 Mexique vs Angleterre 🏴 <span class="cote">2.00</span></h3>
+      <p class="score pending">Pronostic: Les 2 équipes marquent</p>
+      <p style="font-size:13px;color:#aaa;">Temps réglementaire</p>
     </div>
   </div>
 
   <div id="hockey" class="tab-content"><h2>COMBINÉ HOCKEY DU JOUR</h2><p class="empty">Bientôt disponible...</p></div>
   <div id="basket" class="tab-content"><h2>COMBINÉ BASKET DU JOUR</h2><p class="empty">Bientôt disponible...</p></div>
 
-  <!-- HIER = 2/3 -->
+  <!-- BILAN MIS A JOUR -->
   <div id="bilan" class="tab-content">
-    <h2>📊 BILAN VIP - HIER | 2/3 ✅ | Transparence LK</h2>
+    <h2>📊 BILAN VIP - TRANSPARENCE LK</h2>
+    <div class="badge-serie">SÉRIE EN COURS: 3/3 ✅</div>
+    
+    <div class="match">
+      <h3>HIER <span class="cote">2/2</span></h3>
+      <p class="score win">✅ VALIDÉ</p>
+    </div>
+    <div class="match">
+      <h3>🇲🇦 Maroc <span class="cote">-</span></h3>
+      <p class="score win">✅ VALIDÉ</p>
+    </div>
+    <div class="match">
+      <h3>🇫🇷 France <span class="cote">-</span></h3>
+      <p class="score win">✅ VALIDÉ</p>
+    </div>
+
+    <hr style="border-color:#333;margin:20px 0;">
+    
+    <h3 style="color:gold;">Bilan précédent</h3>
     <div class="match">
       <h3>🇦🇺 Australie vs Égypte 🇪🇬 <span class="cote">1.67</span></h3>
       <p class="score win">Résultat: Qualification Égypte VALIDÉ ✅</p>
