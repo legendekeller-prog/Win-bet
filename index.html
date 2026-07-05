@@ -14,20 +14,27 @@ header img{width:100%;max-width:160px;display:block;margin:0 auto;}
 .tab-content{display:none;padding:15px;}
 .tab-content.active{display:block;}
 .match{background:#111;border:1px solid #333;border-radius:10px;padding:12px;margin-bottom:12px;}
-.match h3{margin:0 0 8px;color:gold;font-size:16px;}
-.cote{float:right;color:#0f0;font-weight:bold;}
-.score{font-size:18px;font-weight:bold;}
-.score.win{color:#0f0;} .score.loss{color:#f00;} .score.pending{color:#ffaa00;}
-.cote-total{text-align:center;font-size:24px;color:gold;font-weight:bold;margin:15px 0;background:#222;padding:10px;border-radius:8px;}
+.match h3{margin:0 0 8px;font-size:16px;color:gold;}
+.match h3 .flag{margin:0 4px;}
+.cote{float:right;color:#00ff00;font-weight:bold;font-size:14px;}
+.prono{font-size:18px;font-weight:bold;margin:5px 0;}
+.prono.win{color:#00ff00;}
+.prono.pending{color:#ffaa00;}
+.info{font-size:13px;color:#aaa;}
+.cote-total{text-align:center;font-size:24px;color:gold;font-weight:bold;margin:15px 0;background:#222;padding:15px;border-radius:8px;}
+.bilan-item{background:#111;border:1px solid #333;border-radius:8px;padding:12px;margin-bottom:10px;}
+.bilan-title{color:gold;font-weight:bold;font-size:16px;margin-bottom:5px;}
+.bilan-status{color:#00ff00;font-weight:bold;font-size:16px;}
+.serie-badge{background:gold;color:#000;text-align:center;padding:12px;border-radius:8px;font-weight:bold;font-size:18px;margin-bottom:15px;}
+.bilan-prev-title{color:gold;font-size:18px;margin:20px 0 10px;font-weight:bold;}
 .empty{color:#666;text-align:center;padding:40px 0;font-size:16px;}
-.badge-serie{background:gold;color:#000;text-align:center;padding:8px;border-radius:8px;font-weight:bold;margin-bottom:15px;}
 </style>
 </head>
 <body>
 
 <div id="site-normal">
   <header>
-    <img src="logolk.png?v=29" alt="LÉGENDE KELLER LK">
+    <img src="logolk.png?v=33" alt="LÉGENDE KELLER LK">
   </header>
 
   <section class="sports-tabs">
@@ -39,18 +46,18 @@ header img{width:100%;max-width:160px;display:block;margin:0 auto;}
 
   <!-- AUJOURD'HUI = 3.34 -->
   <div id="foot" class="tab-content active">
-    <h2>COMBINÉ VIP DU JOUR</h2>
-    <p class="cote-total">Cote totale: 3.34</p>
+    <h2>COMBINÉ FOOT DU JOUR</h2>
+    <div class="cote-total">Cote totale: 3.34</div>
     
     <div class="match">
-      <h3>🇧🇷 Brésil vs Norvège 🇳🇴 <span class="cote">1.67</span></h3>
-      <p class="score pending">Pronostic: Les 2 équipes marquent</p>
-      <p style="font-size:13px;color:#aaa;">Temps réglementaire</p>
+      <h3><span class="flag">🇧🇷</span>Brésil vs Norvège<span class="flag">🇳🇴</span> <span class="cote">1.67</span></h3>
+      <p class="prono pending">Pronostic: Les 2 équipes marquent</p>
+      <p class="info">Résultat du match temps réglementaire</p>
     </div>
     <div class="match">
-      <h3>🇲🇽 Mexique vs Angleterre 🏴 <span class="cote">2.00</span></h3>
-      <p class="score pending">Pronostic: Les 2 équipes marquent</p>
-      <p style="font-size:13px;color:#aaa;">Temps réglementaire</p>
+      <h3><span class="flag">🇲🇽</span>Mexique vs Angleterre<span class="flag">🏴</span> <span class="cote">2.00</span></h3>
+      <p class="prono pending">Pronostic: Les 2 équipes marquent</p>
+      <p class="info">Résultat du match temps réglementaire</p>
     </div>
   </div>
 
@@ -60,35 +67,37 @@ header img{width:100%;max-width:160px;display:block;margin:0 auto;}
   <!-- BILAN MIS A JOUR -->
   <div id="bilan" class="tab-content">
     <h2>📊 BILAN VIP - TRANSPARENCE LK</h2>
-    <div class="badge-serie">SÉRIE EN COURS: 3/3 ✅</div>
+    <div class="serie-badge">SÉRIE EN COURS: 4/4 ✅</div>
+    
+    <div class="bilan-item">
+      <div class="bilan-title">HIER 2/2</div>
+      <div class="bilan-status">✅ VALIDÉ</div>
+    </div>
+    
+    <div class="bilan-prev-title">Derniers résultats</div>
     
     <div class="match">
-      <h3>HIER <span class="cote">2/2</span></h3>
-      <p class="score win">✅ VALIDÉ</p>
+      <h3><span class="flag">🇨🇦</span>Canada vs Maroc<span class="flag">🇲🇦</span> <span class="cote">1.77</span></h3>
+      <p class="prono win">Résultat: 3-0 Victoire Maroc VALIDÉ ✅</p>
     </div>
     <div class="match">
-      <h3>🇲🇦 Maroc <span class="cote">-</span></h3>
-      <p class="score win">✅ VALIDÉ</p>
-    </div>
-    <div class="match">
-      <h3>🇫🇷 France <span class="cote">-</span></h3>
-      <p class="score win">✅ VALIDÉ</p>
+      <h3><span class="flag">🇵🇾</span>Paraguay vs France<span class="flag">🇫🇷</span> <span class="cote">1.20</span></h3>
+      <p class="prono win">Résultat: 1-0 Victoire France VALIDÉ ✅</p>
     </div>
 
-    <hr style="border-color:#333;margin:20px 0;">
+    <div class="bilan-prev-title">Bilan précédent</div>
     
-    <h3 style="color:gold;">Bilan précédent</h3>
     <div class="match">
-      <h3>🇦🇺 Australie vs Égypte 🇪🇬 <span class="cote">1.67</span></h3>
-      <p class="score win">Résultat: Qualification Égypte VALIDÉ ✅</p>
+      <h3><span class="flag">🇦🇺</span>Australie vs Égypte<span class="flag">🇪🇬</span> <span class="cote">1.67</span></h3>
+      <p class="prono win">Résultat: Qualification Égypte VALIDÉ ✅</p>
     </div>
     <div class="match">
-      <h3>🇦🇷 Argentine vs Cap-Vert 🇨🇻 <span class="cote">1.15</span></h3>
-      <p class="score loss">Résultat: Victoire Argentine PERDU ❌</p>
+      <h3><span class="flag">🇦🇷</span>Argentine vs Cap-Vert<span class="flag">🇨🇻</span> <span class="cote">1.15</span></h3>
+      <p class="prono" style="color:#ff0000;">Résultat: Victoire Argentine PERDU ❌</p>
     </div>
     <div class="match">
-      <h3>🇨🇴 Colombie vs Ghana 🇬🇭 <span class="cote">1.42</span></h3>
-      <p class="score win">Résultat: Victoire Colombie VALIDÉ ✅</p>
+      <h3><span class="flag">🇨🇴</span>Colombie vs Ghana<span class="flag">🇬🇭</span> <span class="cote">1.42</span></h3>
+      <p class="prono win">Résultat: Victoire Colombie VALIDÉ ✅</p>
     </div>
   </div>
 
