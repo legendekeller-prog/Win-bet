@@ -1,4 +1,4 @@
-  <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="fr">
 <head>
 <meta charset="UTF-8">
@@ -28,13 +28,16 @@ header img{width:100%;max-width:160px;display:block;margin:0 auto;}
 .serie-badge{background:gold;color:#000;text-align:center;padding:12px;border-radius:8px;font-weight:bold;font-size:18px;margin-bottom:15px;}
 .bilan-prev-title{color:gold;font-size:18px;margin:20px 0 10px;font-weight:bold;}
 .empty{color:#666;text-align:center;padding:40px 0;font-size:16px;}
+.no-match{background:#111;border:2px dashed gold;border-radius:10px;padding:30px;text-align:center;margin:20px 0;}
+.no-match h3{color:gold;font-size:18px;margin-bottom:10px;}
+.no-match p{color:#aaa;font-size:14px;}
 </style>
 </head>
 <body>
 
 <div id="site-normal">
   <header>
-    <img src="logolk.png?v=35" alt="LÉGENDE KELLER LK">
+    <img src="logolk.png?v=36" alt="LÉGENDE KELLER LK">
   </header>
 
   <section class="sports-tabs">
@@ -44,21 +47,15 @@ header img{width:100%;max-width:160px;display:block;margin:0 auto;}
     <button class="tab-btn" onclick="openTab('bilan')">📊 BILAN VIP</button>
   </section>
 
-  <!-- AUJOURD'HUI = 2.17 -->
+  <!-- AUJOURD'HUI = PAS DE MATCH -->
   <div id="foot" class="tab-content active">
     <h2>COMBINÉ FOOT DU JOUR</h2>
-    <div class="cote-total">Cote totale: 2.17</div>
     
-    <div class="match">
-      <h3><span class="flag">🇦🇷</span>Argentine vs Égypte<span class="flag">🇪🇬</span> <span class="cote">1.33</span></h3>
-      <p class="prono pending">Pronostic: Victoire Argentine</p>
-      <p class="info">Résultat du match - Temps réglementaire</p>
+    <div class="no-match">
+      <h3>⏰ PAS DE MATCH POUR L'HEURE</h3>
+      <p>Le prochain combiné arrive bientôt<br>Revenez dans quelques heures Boss 🔥</p>
     </div>
-    <div class="match">
-      <h3><span class="flag">🇨🇭</span>Suisse vs Colombie<span class="flag">🇨🇴</span> <span class="cote">1.63</span></h3>
-      <p class="prono pending">Pronostic: Qualification Colombie</p>
-      <p class="info">Résultat final</p>
-    </div>
+    
   </div>
 
   <div id="hockey" class="tab-content"><h2>COMBINÉ HOCKEY DU JOUR</h2><p class="empty">Bientôt disponible...</p></div>
@@ -66,7 +63,7 @@ header img{width:100%;max-width:160px;display:block;margin:0 auto;}
 
   <!-- BILAN MIS A JOUR -->
   <div id="bilan" class="tab-content">
-    <h2>📊 BILAN VIP -RESTER BRANCHER </h2>
+    <h2>📊 BILAN VIP - TRANSPARENCE LK</h2>
     <div class="serie-badge">SÉRIE EN COURS: 8/8 ✅</div>
     
     <div class="bilan-item">
