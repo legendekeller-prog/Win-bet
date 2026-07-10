@@ -16,6 +16,7 @@ header img{width:100%;max-width:160px;display:block;margin:0 auto;}
 .match{background:#111;border:1px solid #333;border-radius:10px;padding:12px;margin-bottom:12px;}
 .match h3{margin:0 0 8px;font-size:16px;color:gold;}
 .match h3 .flag{margin:0 4px;}
+.match-date{color:#ffaa00;font-size:12px;font-weight:bold;float:right;}
 .cote{float:right;color:#00ff00;font-weight:bold;font-size:14px;}
 .prono{font-size:18px;font-weight:bold;margin:5px 0;}
 .prono.win{color:#00ff00;}
@@ -28,16 +29,13 @@ header img{width:100%;max-width:160px;display:block;margin:0 auto;}
 .serie-badge{background:gold;color:#000;text-align:center;padding:12px;border-radius:8px;font-weight:bold;font-size:18px;margin-bottom:15px;}
 .bilan-prev-title{color:gold;font-size:18px;margin:20px 0 10px;font-weight:bold;}
 .empty{color:#666;text-align:center;padding:40px 0;font-size:16px;}
-.no-match{background:#111;border:2px dashed gold;border-radius:10px;padding:30px;text-align:center;margin:20px 0;}
-.no-match h3{color:gold;font-size:18px;margin-bottom:10px;}
-.no-match p{color:#aaa;font-size:14px;}
 </style>
 </head>
 <body>
 
 <div id="site-normal">
   <header>
-    <img src="logolk.png?v=36" alt="LÉGENDE KELLER LK">
+    <img src="logolk.png?v=38" alt="LÉGENDE KELLER LK">
   </header>
 
   <section class="sports-tabs">
@@ -47,15 +45,26 @@ header img{width:100%;max-width:160px;display:block;margin:0 auto;}
     <button class="tab-btn" onclick="openTab('bilan')">📊 BILAN VIP</button>
   </section>
 
-  <!-- AUJOURD'HUI = PAS DE MATCH -->
+  <!-- AUJOURD'HUI = 5.20 -->
   <div id="foot" class="tab-content active">
-    <h2>COMBINÉ FOOT DU JOUR</h2>
+    <h2>COMBINÉ FOOT DU 11 AU 12</h2>
+    <div class="cote-total">Cote totale: 5.20</div>
     
-    <div class="no-match">
-      <h3>⏰ PAS DE MATCH POUR L'HEURE</h3>
-      <p>Le prochain combiné arrive bientôt<br>Revenez dans quelques heures Boss 🔥</p>
+    <div class="match">
+      <h3><span class="flag">🇪🇸</span>Espagne vs Belgique<span class="flag">🇧🇪</span> <span class="match-date">11-12</span></h3>
+      <p class="prono pending">Pronostic: Victoire Espagne</p>
+      <p class="info">Résultat du match - Temps réglementaire | Cote: 1.61</p>
     </div>
-    
+    <div class="match">
+      <h3><span class="flag">🇳🇴</span>Norvège vs Angleterre<span class="flag">🏴</span> <span class="match-date">11-12</span></h3>
+      <p class="prono pending">Pronostic: Victoire Angleterre</p>
+      <p class="info">Résultat du match - Temps réglementaire | Cote: 1.89</p>
+    </div>
+    <div class="match">
+      <h3><span class="flag">🇦🇷</span>Argentine vs Suisse<span class="flag">🇨🇭</span> <span class="match-date">11-12</span></h3>
+      <p class="prono pending">Pronostic: Victoire Argentine</p>
+      <p class="info">Résultat du match - Temps réglementaire | Cote: 1.71</p>
+    </div>
   </div>
 
   <div id="hockey" class="tab-content"><h2>COMBINÉ HOCKEY DU JOUR</h2><p class="empty">Bientôt disponible...</p></div>
@@ -74,27 +83,14 @@ header img{width:100%;max-width:160px;display:block;margin:0 auto;}
     <div class="bilan-prev-title">Derniers résultats</div>
     
     <div class="match">
-      <h3><span class="flag">🇵🇹</span>Portugal vs Espagne<span class="flag">🇪🇸</span> <span class="cote">1.24</span></h3>
+      <h3><span class="flag">🇵🇹</span>Portugal vs Espagne<span class="flag">🇪🇸</span></h3>
       <p class="prono win">Résultat: 0-1 VALIDÉ ✅</p>
-      <p class="info">Nul ou Espagne</p>
+      <p class="info">Nul ou Espagne | Cote: 1.24</p>
     </div>
     <div class="match">
-      <h3><span class="flag">🇺🇸</span>USA vs Belgique<span class="flag">🇧🇪</span> <span class="cote">1.67</span></h3>
+      <h3><span class="flag">🇺🇸</span>USA vs Belgique<span class="flag">🇧🇪</span></h3>
       <p class="prono win">Résultat: 1-4 VALIDÉ ✅</p>
-      <p class="info">Plus de 2,5 buts</p>
-    </div>
-
-    <div class="bilan-prev-title">Bilan précédent</div>
-    
-    <div class="match">
-      <h3><span class="flag">🇧🇷</span>Brésil vs Norvège<span class="flag">🇳🇴</span> <span class="cote">1.67</span></h3>
-      <p class="prono win">Résultat: 1-2 VALIDÉ ✅</p>
-      <p class="info">Les 2 équipes marquent</p>
-    </div>
-    <div class="match">
-      <h3><span class="flag">🇲🇽</span>Mexique vs Angleterre<span class="flag">🏴</span> <span class="cote">2.00</span></h3>
-      <p class="prono win">Résultat: 2-3 VALIDÉ ✅</p>
-      <p class="info">Les 2 équipes marquent</p>
+      <p class="info">Plus de 2,5 buts | Cote: 1.67</p>
     </div>
   </div>
 
