@@ -16,7 +16,6 @@ header img{width:100%;max-width:160px;display:block;margin:0 auto;}
 .match{background:#111;border:1px solid #333;border-radius:10px;padding:12px;margin-bottom:12px;}
 .match h3{margin:0 0 8px;font-size:16px;color:gold;}
 .match h3 .flag{margin:0 4px;}
-.match-date{color:#ffaa00;font-size:12px;font-weight:bold;float:right;}
 .cote{float:right;color:#00ff00;font-weight:bold;font-size:14px;}
 .prono{font-size:18px;font-weight:bold;margin:5px 0;}
 .prono.win{color:#00ff00;}
@@ -29,13 +28,15 @@ header img{width:100%;max-width:160px;display:block;margin:0 auto;}
 .serie-badge{background:gold;color:#000;text-align:center;padding:12px;border-radius:8px;font-weight:bold;font-size:18px;margin-bottom:15px;}
 .bilan-prev-title{color:gold;font-size:18px;margin:20px 0 10px;font-weight:bold;}
 .empty{color:#666;text-align:center;padding:40px 0;font-size:16px;}
+/* AJOUT POUR LE NOUVEAU TITRE */
+.waiting-title{text-align:center;font-size:20px;color:gold;font-weight:bold;margin:15px 0;padding:10px;background:#111;border-radius:8px;border:1px dashed gold;}
 </style>
 </head>
 <body>
 
 <div id="site-normal">
   <header>
-    <img src="logolk.png?v=38" alt="LÉGENDE KELLER LK">
+    <img src="logolk.png?v=35" alt="LÉGENDE KELLER LK">
   </header>
 
   <section class="sports-tabs">
@@ -45,26 +46,10 @@ header img{width:100%;max-width:160px;display:block;margin:0 auto;}
     <button class="tab-btn" onclick="openTab('bilan')">📊 BILAN VIP</button>
   </section>
 
-  <!-- AUJOURD'HUI = 5.20 -->
+  <!-- AUJOURD'HUI = EN ATTENTE -->
   <div id="foot" class="tab-content active">
-    <h2>COMBINÉ FOOT DU 11 AU 12</h2>
-    <div class="cote-total">Cote totale: 5.20</div>
-    
-    <div class="match">
-      <h3><span class="flag">🇪🇸</span>Espagne vs Belgique<span class="flag">🇧🇪</span> <span class="match-date">11-12</span></h3>
-      <p class="prono pending">Pronostic: Victoire Espagne</p>
-      <p class="info">Résultat du match - Temps réglementaire | Cote: 1.61</p>
-    </div>
-    <div class="match">
-      <h3><span class="flag">🇳🇴</span>Norvège vs Angleterre<span class="flag">🏴</span> <span class="match-date">11-12</span></h3>
-      <p class="prono pending">Pronostic: Victoire Angleterre</p>
-      <p class="info">Résultat du match - Temps réglementaire | Cote: 1.89</p>
-    </div>
-    <div class="match">
-      <h3><span class="flag">🇦🇷</span>Argentine vs Suisse<span class="flag">🇨🇭</span> <span class="match-date">11-12</span></h3>
-      <p class="prono pending">Pronostic: Victoire Argentine</p>
-      <p class="info">Résultat du match - Temps réglementaire | Cote: 1.71</p>
-    </div>
+    <div class="waiting-title">EN ATTENTE DES MATCHS DE CHAMPIONNAT</div>
+    <p class="empty">Les pronostics du jour arrivent bientôt... Restez connectés 🔥</p>
   </div>
 
   <div id="hockey" class="tab-content"><h2>COMBINÉ HOCKEY DU JOUR</h2><p class="empty">Bientôt disponible...</p></div>
@@ -83,26 +68,8 @@ header img{width:100%;max-width:160px;display:block;margin:0 auto;}
     <div class="bilan-prev-title">Derniers résultats</div>
     
     <div class="match">
-      <h3><span class="flag">🇵🇹</span>Portugal vs Espagne<span class="flag">🇪🇸</span></h3>
+      <h3><span class="flag">🇵🇹</span>Portugal vs Espagne<span class="flag">🇪🇸</span> <span class="cote">1.24</span></h3>
       <p class="prono win">Résultat: 0-1 VALIDÉ ✅</p>
-      <p class="info">Nul ou Espagne | Cote: 1.24</p>
+      <p class="info">Nul ou Espagne</p>
     </div>
-    <div class="match">
-      <h3><span class="flag">🇺🇸</span>USA vs Belgique<span class="flag">🇧🇪</span></h3>
-      <p class="prono win">Résultat: 1-4 VALIDÉ ✅</p>
-      <p class="info">Plus de 2,5 buts | Cote: 1.67</p>
-    </div>
-  </div>
-
-</div>
-
-<script>
-function openTab(tabId){
-  document.querySelectorAll('.tab-content').forEach(t=>t.classList.remove('active'));
-  document.querySelectorAll('.tab-btn').forEach(b=>b.classList.remove('active'));
-  document.getElementById(tabId).classList.add('active');
-  event.target.classList.add('active');
-}
-</script>
-</body>
-</html>
+   
